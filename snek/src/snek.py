@@ -3,7 +3,7 @@ from tail_link import Tail_Link
 class Snek:
     
     def __init__(self, fruit, canvas):
-        print("Making snek")
+        print("Making snake")
         self.x = 100
         self.y = 20
         self.dim = 20

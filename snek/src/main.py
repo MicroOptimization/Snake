@@ -78,6 +78,7 @@ def finish_game():
     root.update()
 
 print()
+
     
 continuing_game = True
 while continuing_game:

@@ -21,7 +21,6 @@ class Tail_Link:
             self.x = 0
         elif self.x <= 0 and self.dir != "up":
             self.x = 400
-        
         if self.y >= 400 and self.dir != "right": 
             self.y = 0
         elif self.y <= 0 and self.dir != "right":
