@@ -4,8 +4,8 @@ class Fruit:
 
     def __init__(self, canvas):
         self.canvas = canvas
-        self.x = 0
-        self.y = 0
+        self.x = 50
+        self.y = 50
         self.dim = 20
         
     def spawn(self):
