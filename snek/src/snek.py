@@ -79,7 +79,7 @@ class Snek:
         y = self.y
         dim = self.dim
         
-        self.canvas.create_rectangle(x, y, x + dim, y + dim, fill='#8B7248')
+        self.canvas.create_rectangle(x, y, x + dim, y + dim, fill='#8B7290')
         
         next_link = self.first_link
         while next_link is not None:

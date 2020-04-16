@@ -21,13 +21,13 @@ class Application(tk.Frame):
     def create_drawings(self):
         print("Creating drawings...")
         
-        self.canvas.bind("<Key>", self.key)
-        self.canvas.bind("<Button-1>", self.callback)
+        self.canvas.bind("<Key>", self.key_listener)
+        self.canvas.bind("<Button-1>", self.focuser)
         
         self.canvas.configure(background='#ECECED')
         self.canvas.pack(fill=BOTH, expand=1)
         
-    def key(self, event):
+    def key_listener(self, event):
         kp = repr(event.char)
         
         if kp == "'w'" and (self.snek.dir != "down" or self.snek.first_link is None):
@@ -39,7 +39,7 @@ class Application(tk.Frame):
         elif kp == "'d'" and (self.snek.dir != "left" or self.snek.first_link is None):
             self.snek.setDir("right")    
         
-    def callback(self, event):
+    def focuser(self, event):
         self.canvas.focus_set()
 
 root = tk.Tk()

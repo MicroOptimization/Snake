@@ -14,7 +14,7 @@ class Tail_Link:
         y = self.y
         dim = self.dim
         
-        canvas.create_rectangle(x, y, x + dim, y + dim, fill='white')
+        canvas.create_rectangle(x, y, x + dim, y + dim, fill='#8B7248')
         
     def update(self):
         if self.x >= 400 and self.dir != "up": 
